@@ -233,6 +233,8 @@
 /* Begin XCBuildConfiguration section */
 		00DF0DE82D6C90FE00DD9D82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 00DF0DE12D6C90FE00DD9D82 /* SecureFramwork */;
+			baseConfigurationReferenceRelativePath = Developer.xcconfig;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -262,15 +264,21 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.icode.swift.SecureFramwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		00DF0DE92D6C90FE00DD9D82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 00DF0DE12D6C90FE00DD9D82 /* SecureFramwork */;
+			baseConfigurationReferenceRelativePath = Developer.xcconfig;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,15 +308,21 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.icode.swift.SecureFramwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		00DF0DEA2D6C90FE00DD9D82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 00DF0DE12D6C90FE00DD9D82 /* SecureFramwork */;
+			baseConfigurationReferenceRelativePath = Developer.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -375,6 +389,8 @@
 		};
 		00DF0DEB2D6C90FE00DD9D82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 00DF0DE12D6C90FE00DD9D82 /* SecureFramwork */;
+			baseConfigurationReferenceRelativePath = Developer.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -434,6 +450,8 @@
 		};
 		00DFEF122D6DA98B009C5F31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 00DF0DE12D6C90FE00DD9D82 /* SecureFramwork */;
+			baseConfigurationReferenceRelativePath = Developer.xcconfig;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -450,6 +468,8 @@
 		};
 		00DFEF132D6DA98B009C5F31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 00DF0DE12D6C90FE00DD9D82 /* SecureFramwork */;
+			baseConfigurationReferenceRelativePath = Developer.xcconfig;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

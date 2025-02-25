@@ -1,0 +1,37 @@
+name: SecureFramwork Build and Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Xcode 16.1
+      run: sudo xcode-select -s /Applications/Xcode_16.1.app/Contents/Developer
+
+    - name: Build SecureFramwork
+      run: |
+        xcodebuild clean build \
+          -project SecureFramwork.xcodeproj \
+          -scheme SecureFramwork \
+          -sdk iphoneos \
+          -configuration Release \
+          CODE_SIGNING_ALLOWED=NO
+
+    - name: Run Tests on Simulator
+      run: |
+        xcodebuild test \
+          -project SecureFramwork.xcodeproj \
+          -scheme SecureFramworkTests \
+          -sdk iphonesimulator \
+          -destination "platform=iOS Simulator,name=iPhone 14,OS=latest" \
+          -configuration Debug \
+          CODE_SIGNING_ALLOWED=NO

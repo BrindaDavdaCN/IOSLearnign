@@ -13,7 +13,7 @@ public class Apicalling {
     
     debugPrint("API CALLED by this URL: \n\(Enviournment.baseURL)")
     
-    let request = URLRequest(url: URL(string:Enviournment.baseURL ?? "https://dummy-json.mock.beeceptor.com/posts")!)
+    let request = URLRequest(url: URL(string:Enviournment.baseURL ?? "")!)
     
     URLSession.shared.dataTask(with: request) { data, respons, error in
       if let error = error{

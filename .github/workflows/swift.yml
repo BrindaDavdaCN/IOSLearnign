@@ -32,6 +32,6 @@ jobs:
           -project SecureFramwork.xcodeproj \
           -scheme SecureFramworkTests \
           -sdk iphonesimulator \
-          -destination "platform=iOS Simulator,OS=18.1,name=Any iOS Simulator Device"
+          -destination "platform=iOS Simulator,name=iPhone 15,OS=18.1" \
           -configuration Debug \
           CODE_SIGNING_ALLOWED=NO
